@@ -1,0 +1,14 @@
+stages:
+  train:
+    cmd: python3 src/train.py
+    deps:
+    - data/processed
+    - src/config.py
+    - src/train.py
+    outs:
+    - models
+    - params.yml:
+        cache: false
+    metrics:
+    - metrics.csv:
+        cache: false

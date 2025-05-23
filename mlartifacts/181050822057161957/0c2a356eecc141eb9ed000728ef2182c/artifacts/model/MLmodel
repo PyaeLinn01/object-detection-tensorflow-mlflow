@@ -1,0 +1,28 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 2.22.0
+model_size_bytes: 3838
+model_uuid: 38d29459c2444859b62883e60cc62e66
+prompts: null
+run_id: 0c2a356eecc141eb9ed000728ef2182c
+signature:
+  inputs: '[{"type": "double", "name": "Culmen Length (mm)", "required": true}, {"type":
+    "double", "name": "Culmen Depth (mm)", "required": true}]'
+  outputs: '[{"type": "string", "name": "Species", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-05-22 12:06:13.567001'
